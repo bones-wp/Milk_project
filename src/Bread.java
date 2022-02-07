@@ -7,14 +7,12 @@ public class Bread extends Products{
     }
 
     @Override
-    public void find() {
-        for (Products s :products){
+    public void find(Products s) {
             Pattern pattern = Pattern.compile("[Гг]лютен");
             Matcher matcher = pattern.matcher(s.composition);
             while (matcher.find()) {
                 System.out.println(s.type + " " + s.manufacture + " с глютеном");
             }
-        }
     }
 
 }

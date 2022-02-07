@@ -24,13 +24,13 @@ public class Products {
         products[5] = new Bread("Булка", "1ый хлебзавод", "12.12.21", "Мука пшеничная, вода, соль") ;
     }
 
-    public void find() {
+    public void find(Products s) {
 
     }
 
     public void print(){
         for(Products s :products){
-            s.find();
+            s.find(s);
         }
     }
 

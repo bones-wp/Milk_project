@@ -8,13 +8,11 @@ public class Milk extends Products{
     }
 
     @Override
-    public void find() {
-        for (Products s :products){
+    public void find(Products s) {
             Pattern pattern = Pattern.compile("[Пп]альмовое масло");
             Matcher matcher = pattern.matcher(s.composition);
             while (matcher.find()) {
                 System.out.println(s.type + " " + s.manufacture + " с пальмовым маслом");
             }
-        }
     }
 }
