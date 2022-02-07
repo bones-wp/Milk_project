@@ -25,19 +25,13 @@ public class Products {
     }
 
     public void find() {
-        for (Products s :products){
-            Pattern pattern = Pattern.compile("");
-            Matcher matcher = pattern.matcher(s.composition);
-            while (matcher.find()) {
-                System.out.println("");
-            }
-        }
-    }
-    public void print(){
-        for(Products a: products){
-            a.find();
-        }
+
     }
 
+    public void print(){
+        for(Products s :products){
+            s.find();
+        }
+    }
 
 }

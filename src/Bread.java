@@ -5,6 +5,7 @@ public class Bread extends Products{
     public Bread(String type, String manufacture, String date, String composition) {
         super(type, manufacture, date, composition);
     }
+
     @Override
     public void find() {
         for (Products s :products){

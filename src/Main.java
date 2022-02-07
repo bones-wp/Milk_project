@@ -5,6 +5,6 @@ public class Main {
         Products products = new Products();
 
         products.print();
-
     }
+
 }
