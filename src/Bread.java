@@ -1,20 +1,19 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Milk extends Products{
-
-    public Milk(String type, String manufacture, String date, String composition) {
+public class Bread extends Products{
+    public Bread(String type, String manufacture, String date, String composition) {
         super(type, manufacture, date, composition);
     }
-
     @Override
     public void find() {
         for (Products s :products){
-            Pattern pattern = Pattern.compile("[Пп]альмовое масло");
+            Pattern pattern = Pattern.compile("[Гг]лютен");
             Matcher matcher = pattern.matcher(s.composition);
             while (matcher.find()) {
-                System.out.println(s.type + " " + s.manufacture + " с пальмовым маслом");
+                System.out.println(s.type + " " + s.manufacture + " с глютеном");
             }
         }
     }
+
 }
