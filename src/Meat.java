@@ -16,4 +16,10 @@ public class Meat extends Products{
             }
     }
 
+    @Override
+    public String toString(){
+        return "Мясное изделие: " + type + " " + manufacture ;
+    }
+
+
 }

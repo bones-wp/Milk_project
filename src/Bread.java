@@ -14,5 +14,10 @@ public class Bread extends Products{
                 System.out.println(s.type + " " + s.manufacture + " с глютеном");
             }
     }
+    @Override
+    public String toString(){
+        return "Хлебобулочное изделие: " + type + " " + manufacture ;
+    }
+
 
 }

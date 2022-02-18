@@ -15,4 +15,11 @@ public class Milk extends Products{
                 System.out.println(s.type + " " + s.manufacture + " с пальмовым маслом");
             }
     }
+
+    @Override
+    public String toString(){
+        return "Молочное изделие: " + type + " " + manufacture ;
+    }
+
+
 }
