@@ -14,7 +14,10 @@ public class Main {
         magazine.find();
         magazine.print();
 
+        magazine.add(5, new Vegetables("Огурцы", "Совхоз Майский"));
+        magazine.print();
 
+        magazine.vegan();
 
     }
 

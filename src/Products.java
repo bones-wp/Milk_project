@@ -4,11 +4,8 @@ abstract class Products{
     String manufacture;
     String type;
 
-    public Products (String type, String manufacture, String date, String composition) {
+    public Products (String type) {
         this.type = type;
-        this.manufacture = manufacture;
-        this.date = date;
-        this.composition = composition;
     }
 
 

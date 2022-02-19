@@ -34,6 +34,13 @@ public class Magazine {
         }
     }
 
+    public void vegan() {
+        System.out.println();
+        for (Products a : goods) {
+            if (a instanceof Veganeble)
+                ((Veganeble) a).vegan();
+        }
+    }
 
 
 }
