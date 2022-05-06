@@ -2,11 +2,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Bread extends Products implements Veganeble{
-    public Bread(String type, String manufacture, String date, String composition) {
-        super(type);
-        this.manufacture = manufacture;
-        this.date = date;
-        this.composition = composition;
+
+    public Bread(String date, String composition, String manufacture, String type) {
+        super(date, composition, manufacture, type);
     }
 
     @Override

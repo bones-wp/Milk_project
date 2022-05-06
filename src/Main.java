@@ -7,14 +7,14 @@ public class Main {
         magazine.print();
         magazine.find();
 
-        magazine.set(0,new Milk("Кефир", "Кубанская бурёнка", "15.02.22", "Молоко, закваска"));
-        magazine.set(2, new Meat("Колбаса", "Фабрика качества", "18.02.22", "Мясо куриное, мясо свинное, красители"));
+        magazine.set(0,new Milk("15.02.22", "Молоко, закваска", "Кубанская бурёнка", "Кефир"));
+        magazine.set(2, new Meat("18.02.22", "Мясо куриное, мясо свинное, красители", "Фабрика качества", "Колбаса"));
         magazine.goods.remove(4);
 
         magazine.find();
         magazine.print();
 
-        magazine.add(5, new Vegetables("Огурцы", "Совхоз Майский"));
+        magazine.add(5, new Vegetables("11.02.22", "Огурцы", "Майский", "Огурцы"));
         magazine.print();
 
         magazine.vegan();

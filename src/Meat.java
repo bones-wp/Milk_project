@@ -3,11 +3,8 @@ import java.util.regex.Pattern;
 
 public class Meat extends Products{
 
-    public Meat(String type, String manufacture, String date, String composition) {
-        super(type);
-        this.manufacture = manufacture;
-        this.date = date;
-        this.composition = composition;
+    public Meat(String date, String composition, String manufacture, String type) {
+        super(date, composition, manufacture, type);
     }
 
     @Override

@@ -3,9 +3,8 @@ import java.util.regex.Pattern;
 
 public class Vegetables extends Products implements Veganeble{
 
-    public Vegetables (String type, String manufacture){
-        super(type);
-        this.manufacture = manufacture;
+    public Vegetables(String date, String composition, String manufacture, String type) {
+        super(date, composition, manufacture, type);
     }
 
     @Override
