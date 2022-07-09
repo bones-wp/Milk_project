@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 public class Vegetables extends Products implements Veganeble{
 
     public Vegetables (String type, String manufacture){
-        super(type);
+        this.type = type;
         this.manufacture = manufacture;
     }
 

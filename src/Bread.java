@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class Bread extends Products implements Veganeble{
     public Bread(String type, String manufacture, String date, String composition) {
-        super(type);
+        this.type = type;
         this.manufacture = manufacture;
         this.date = date;
         this.composition = composition;

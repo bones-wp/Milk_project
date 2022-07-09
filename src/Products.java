@@ -4,11 +4,6 @@ abstract class Products{
     String manufacture;
     String type;
 
-    public Products (String type) {
-        this.type = type;
-    }
-
-
     abstract public void find(Products s);
 
 }
